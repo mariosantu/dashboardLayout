@@ -1,0 +1,41 @@
+<!-- <h1>Sign Up</h1>
+
+<form #registerform="ngForm" (ngSubmit)="onSubmit(registerform)">
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" required ngModel>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="password" required ngModel>
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" type="submit" [disabled]="!registerform.valid">SignUp</button>
+</form> -->
+
+
+<div class="form-container">
+    
+    <form #registerform="ngForm" (ngSubmit)="onSubmit(registerform)">
+
+        <div class="title">
+            <img src="../../../assets/img/logo-small.svg" alt="">
+            <h3>SignUp</h3>
+        </div>
+
+        <div class="label-pos" appearance="fill">
+            <input matInput type="text" name="email" required ngModel>
+            <label class="email">Email</label>
+        </div>
+        
+        <div class="label-pos" appearance="fill">
+            <input matInput type="password" name="password" required ngModel>
+            <label>Password</label>
+        </div>
+
+        
+        <button  color="accent" type="submit" [disabled]="!registerform.valid">SignUp</button>
+    </form>
+</div>

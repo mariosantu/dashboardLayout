@@ -1,0 +1,84 @@
+<div  id="total-wrapper">
+  <main>
+        <!--Nav-->
+        <nav>
+          <!--Logo-->
+        <div class="logo">
+            <div class="big_logo">
+                <a href="#">
+                    <img src="../../../assets/img/logo.svg" alt="logo_spotify">
+                </a>
+            </div>
+            <div class="small_logo">
+                <a href="#">
+                    <img src="../../../assets/img/logo-small.svg" alt="small_logo">
+                </a>
+            </div>
+        </div>
+          <!--Logo-->
+    
+          <!--main-links-->
+          <div class="main-links-container">
+    
+            <div class="links-container">
+                
+                <div class="title">
+                    <a routerLink="pagina1" routerLinkActive="active">
+                        Home
+                    </a>
+                </div>
+            </div> 
+    
+            <div class="links-container">
+                <div class="title">
+                    <a routerLink="pagina2" routerLinkActive="active">UTA's songs</a>
+                </div>
+            </div> 
+
+            <div class="links-container">
+              <div class="title">
+                  <a routerLink="pagina3" routerLinkActive="active">pagina3</a>
+              </div>
+          </div>
+    
+          </div>
+          <!--main-links-->
+
+        </nav>
+        <!--Nav-->
+
+         <!--id section-->
+        <section class="identify-section">
+          <div class="identify-container">
+
+            <div class="user">
+              <img src="../../../assets/img/user.jpg" alt="">
+              <span>merio</span>
+              <mat-icon>expand_more</mat-icon>
+            </div>
+
+              <!-- <button [ngClass]="{'none' : isLoggedIn}" routerLink="/register">
+                <mat-icon >app_registration</mat-icon>
+              </button>
+
+              <button [ngClass]="{'none' : isLoggedIn}" routerLink="/login">
+                <mat-icon >login</mat-icon>
+              </button> -->
+
+              <div>
+                <button (click)="onLogOut()">
+                  <mat-icon>logout</mat-icon>
+                </button>
+              </div>
+              
+          </div>
+
+
+          <router-outlet></router-outlet>
+        </section>
+       <!--id section-->
+  </main>
+</div>
+
+
+

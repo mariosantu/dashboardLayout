@@ -1,0 +1,162 @@
+#total-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.active {
+    background-color: #aafb2f;
+    color: black;
+}
+
+
+a, i {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+i:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.small-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/*COMMON*/
+
+
+/*MAIN*/
+main {
+    height: 100vh;
+}
+
+/*nav*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100%;
+    width: 210px;
+    color: white;
+    overflow: hidden;
+    background: black;
+}
+
+.logo {
+    background-color: black; 
+    padding: 15px;
+}
+
+.small_logo {
+    display: none;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+.main-links-container {
+    padding-top: 30px;
+    background-color: black;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.links-container .title:hover {
+    border-left: 2px solid #aafb2f;
+    border-radius: 1px;
+}
+
+.title {
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/*nav*/
+
+/*id section*/
+
+
+.identify-section {
+    background: rgb(219,104,120);
+    background: linear-gradient(180deg, rgba(219,104,120,1) 23%, rgba(20,25,34,1) 40%);
+    color: white;
+    float: left;
+    height: 100%;
+    width: calc( 100% - 210px );
+    overflow-y: auto;
+}
+
+.identify-container {
+    /* background: rgb(79, 79, 79); */
+    background: rgb(219,104,120);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 70px 70px;
+    padding: 3px 4px;
+}
+
+.user span {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+.user img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+/*Media query*/
+
+@media screen and (max-width: 767px) {
+    nav {
+        width: 70px;
+    }
+
+    .identify-section {
+        width: calc( 100% - 70px );
+    }
+
+    .big_logo,
+    .title {
+        display: none;
+    }
+
+    .small_logo {
+        display: block;
+    }
+}
